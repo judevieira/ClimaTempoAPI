@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(181, 192, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container{
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+#pesquisa input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 8px;
+}
+
+#pesquisa input:focus-visible{
+    outline: none;
+}
+
+#pesquisa button{
+    border: none;
+    background-color: transparent;
+}
+
+#infos_cidade{
+    background-color: rgb(43, 94, 187);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 10px;
+    color: white;
+}
+
+#titulo_cidade{
+    text-align: center;
+}
+
+#clima_tempo{
+    display: none;
+}
+
+#clima_tempo.show {
+    display: block;
+}
+
+#valor_tempo{
+    line-height: 2px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#descricao_tempo{
+    font-weight: 400;
+    /*text-transform: capitalize;*/
+}
+
+#infos_adicionais{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+    
+}
+
+#infos_adicionais .infos{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+
+}
+
+#infos_adicionais .infos h4{
+    font-size: 15px;
+
+}
+
+#infos_adicionais .infos i{
+    text-align: center;
+    font-size: 15px;
+    width: 20%;
+}
+
+.info{
+    line-height: 2px;
+    margin: auto;
+}
+
+#temp_max_icon{
+    color: red;
+}
+
+#temp_min_icon{
+    color: blue;
+}
+
+#umidade_icon{
+    color: rgb(161, 82, 235);
+}
+
+#vento_icon{
+    color:rgb(87, 226, 180);
+}
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Clima Tempo</title>
+</head>
+<body>
+    <main id="container">
+        <form id="pesquisa">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" name="nome_cidade" id="nome_cidade" placeholder="Buscar cidade">
+            <button type="submit" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <section id="clima_tempo" class="show">
+
+            <h1 id="titulo_cidade">Porto Alegre, RS</h1>
+            
+            <div id="infos_cidade">
+                <img  alt="">
+                <img id="img_tempo"src="http://openweathermap.org/img/wn/04d@2x.png" alt=""><!--vai vir da api-->
+                <div>
+                    <p id="valor_tempo">32 °C</p>
+                    <p id="descricao_tempo">Céu Limpo</p>
+                </div>
+                
+            </div>
+
+            <div id="infos_adicionais">
+                <div id="temp maxima" class="infos">
+                    <i id="temp_max_icon" class="fa-solid fa-temperature-full"></i>
+                    <div class="info">
+                        <h4>Máxima</h4>
+                        <p id="numero">32 °C</p>
+                    </div>
+                    
+                </div>
+
+                <div id="temp minima" class="infos">
+                    
+                    <i id="temp_min_icon" class="fa-solid fa-temperature-empty"></i>
+                    <div class="info">
+                        <h4>Minima</h4>
+                        <p id="numero">12 °C</p>
+                    </div>
+                    
+                </div>
+
+                <div id="temp umidade" class="infos">
+                    <i id="umidade_icon" class="fa-solid fa-droplet"></i>
+                    <div class="info">
+                        <h4>Umidade</h4>
+                        <p id="numero">47%</p>
+                    </div>
+                    
+                </div>
+
+                <div id="temp vento" class="infos">
+                    <i id="vento_icon" class="fa-solid fa-wind"></i>    
+                    <div class="info">
+                        <h4>Vento</h4>           
+                        <p id="numero">6.2 km/h</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <div id="alerta"></div>
+    </main>
+
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
